@@ -1,112 +1,396 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Alborz Solar Energy | Renewable Energy Solutions</title>
+
+<title>Pak Energy Gostar Alborz | Solar & Renewable Energy</title>
+
+<meta name="description" content="Pak Energy Gostar Alborz provides professional solar energy, photovoltaic systems, electrical services and renewable energy solutions.">
 
 <style>
+
+/* =========================
+   GLOBAL
+========================= */
+
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
-    color: #222;
-    background: #f7f9fb;
+    line-height: 1.7;
+    color: #243447;
+    background: #f6f9fc;
 }
 
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 88%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
 header {
-    background: #102a43;
+    background: rgba(10, 35, 58, 0.97);
     color: white;
-    padding: 22px 8%;
+    padding: 18px 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.15);
+}
+
+.header-inner {
+    width: 88%;
+    max-width: 1200px;
+    margin: auto;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.logo {
-    font-size: 24px;
+.logo-area {
+    display: flex;
+    flex-direction: column;
+}
+
+.company-name {
+    font-size: 22px;
     font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.company-subtitle {
+    color: #f9c74f;
+    font-size: 12px;
+    margin-top: 2px;
+    letter-spacing: 1px;
 }
 
 nav a {
     color: white;
-    text-decoration: none;
     margin-left: 25px;
     font-size: 15px;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
+nav a:hover {
+    color: #f9c74f;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
 .hero {
-    min-height: 520px;
-    padding: 100px 8%;
+
+    min-height: 650px;
+
     display: flex;
     align-items: center;
+
     background:
-        linear-gradient(rgba(16,42,67,.78), rgba(16,42,67,.78)),
-        url("https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1800&q=80")
-        center/cover;
+        linear-gradient(
+            rgba(8, 35, 57, 0.80),
+            rgba(8, 35, 57, 0.80)
+        ),
+
+        url("https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=2000&q=85")
+
+        center / cover;
+
     color: white;
 }
 
 .hero-content {
-    max-width: 700px;
+    max-width: 780px;
+}
+
+.hero-label {
+    color: #f9c74f;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 18px;
 }
 
 .hero h1 {
-    font-size: 52px;
-    margin-bottom: 20px;
+    font-size: 58px;
+    line-height: 1.15;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #f9c74f;
 }
 
 .hero p {
     font-size: 20px;
-    margin-bottom: 30px;
+    max-width: 700px;
+    margin-bottom: 35px;
+    color: #e8eef4;
 }
 
-.button {
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn {
     display: inline-block;
-    padding: 14px 28px;
+    padding: 15px 30px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-primary {
     background: #f9c74f;
     color: #102a43;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 6px;
 }
 
-section {
-    padding: 75px 8%;
+.btn-primary:hover {
+    transform: translateY(-3px);
 }
 
-.section-title {
-    text-align: center;
-    margin-bottom: 45px;
+.btn-outline {
+    border: 2px solid white;
+    color: white;
 }
 
-.section-title h2 {
-    font-size: 34px;
+.btn-outline:hover {
+    background: white;
     color: #102a43;
 }
 
-.services {
+
+/* =========================
+   STATS
+========================= */
+
+.stats {
+    background: white;
+    padding: 45px 0;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    text-align: center;
+}
+
+.stat h3 {
+    color: #102a43;
+    font-size: 32px;
+}
+
+.stat p {
+    color: #64748b;
+    font-size: 14px;
+}
+
+
+/* =========================
+   SECTIONS
+========================= */
+
+section {
+    padding: 90px 0;
+}
+
+.section-heading {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 50px;
+}
+
+.section-heading h2 {
+    color: #102a43;
+    font-size: 38px;
+    margin-bottom: 12px;
+}
+
+.section-heading p {
+    color: #64748b;
+}
+
+
+/* =========================
+   SERVICES
+========================= */
+
+.services-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
 }
 
-.card {
+.service-card {
     background: white;
-    padding: 35px 25px;
-    border-radius: 10px;
-    box-shadow: 0 5px 20px rgba(0,0,0,.08);
+    padding: 38px 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(15, 35, 55, 0.08);
+    border-top: 4px solid #f9c74f;
+    transition: 0.3s;
 }
 
-.card h3 {
-    color: #102a43;
-    margin-bottom: 15px;
+.service-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 35px rgba(15, 35, 55, 0.13);
 }
+
+.icon {
+    font-size: 38px;
+    margin-bottom: 18px;
+}
+
+.service-card h3 {
+    color: #102a43;
+    margin-bottom: 12px;
+    font-size: 21px;
+}
+
+.service-card p {
+    color: #64748b;
+}
+
+
+/* =========================
+   PROJECTS
+========================= */
+
+.projects {
+    background: white;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.project-card {
+    min-height: 260px;
+    padding: 30px;
+    border-radius: 12px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            rgba(8,35,57,0.30),
+            rgba(8,35,57,0.88)
+        ),
+
+        url("https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=900&q=80")
+
+        center / cover;
+
+    transition: 0.3s;
+}
+
+.project-card:nth-child(2) {
+    background:
+        linear-gradient(
+            rgba(8,35,57,0.30),
+            rgba(8,35,57,0.88)
+        ),
+
+        url("https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?auto=format&fit=crop&w=900&q=80")
+
+        center / cover;
+}
+
+.project-card:nth-child(3) {
+    background:
+        linear-gradient(
+            rgba(8,35,57,0.30),
+            rgba(8,35,57,0.88)
+        ),
+
+        url("https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&w=900&q=80")
+
+        center / cover;
+}
+
+.project-card:hover {
+    transform: scale(1.02);
+}
+
+.project-card h3 {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.project-card p {
+    font-size: 14px;
+    color: #e5edf5;
+}
+
+
+/* =========================
+   WHY US
+========================= */
+
+.why-us {
+    background: #f6f9fc;
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.why-card {
+    background: white;
+    padding: 32px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.why-card h3 {
+    color: #102a43;
+    margin: 15px 0 10px;
+}
+
+.why-card p {
+    color: #64748b;
+    font-size: 15px;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
 
 .about {
     background: white;
@@ -118,474 +402,653 @@ section {
     text-align: center;
 }
 
+.about-content p {
+    margin-bottom: 20px;
+    color: #526477;
+    font-size: 17px;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
 .contact {
     background: #102a43;
     color: white;
-    text-align: center;
 }
 
-.contact h2 {
-    font-size: 35px;
-    margin-bottom: 20px;
-}
-
-footer {
-    background: #071c2e;
-    color: white;
-    text-align: center;
-    padding: 25px;
-    font-size: 14px;
-}
-
-@media(max-width: 800px) {
-    header {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    nav a {
-        margin: 0 8px;
-    }
-
-    .hero h1 {
-        font-size: 38px;
-    }
-
-    .services {
-        grid-template-columns: 1fr;
-    }
-}
-</style>
-</head>
-
-<body>
-
-<header>
-    <div class="logo">ALBORZ SOLAR ENERGY</div>
-
-   <nav>
-    <a href="#home">Home</a>
-    <a href="#services">Services</a>
-    <a href="#projects">Projects</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-</nav>
-</header>
-
-<section class="hero" id="home">
-    <div class="hero-content">
-        <h1>Powering a Cleaner Future</h1>
-
-        <p>
-            Professional solar energy and renewable energy solutions
-            for residential, commercial and industrial projects.
-        </p>
-
-        <a href="#contact" class="button">Request a Quote</a>
-    </div>
-</section>
-
-<section id="services">
-    <div class="section-title">
-        <h2>Our Services</h2>
-        <p>Reliable renewable energy solutions from planning to installation.</p>
-    </div>
-
-    <div class="services">
-
-        <div class="card">
-            <h3>☀️ Solar Panel Installation</h3>
-            <p>
-                Professional photovoltaic system installation
-                for homes, villas, apartments and small commercial projects.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>⚡ Electrical Services</h3>
-            <p>
-                Electrical installation, maintenance and technical
-                services for residential and commercial projects.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>🔋 Renewable Energy Solutions</h3>
-            <p>
-                Solar energy planning and renewable energy solutions
-                designed to improve energy efficiency and reduce costs.
-            </p>
-        </div>
-
-    </div>
-</section>
-<section id="projects">
-    <div class="section-title">
-        <h2>Our Projects</h2>
-        <p>Professional solar energy solutions for a wide range of applications.</p>
-    </div>
-
-    <div class="services">
-
-        <div class="card">
-            <h3>☀️ Residential Solar Systems</h3>
-            <p>
-                Solar photovoltaic systems designed for homes, villas
-                and apartments to improve energy efficiency and reduce
-                electricity costs.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>🏢 Commercial Solar Projects</h3>
-            <p>
-                Reliable solar energy solutions for offices, businesses
-                and commercial properties with a focus on performance
-                and long-term energy savings.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>⚡ Solar Power Plant Solutions</h3>
-            <p>
-                Technical planning and solar power solutions for larger
-                renewable energy projects and photovoltaic installations.
-            </p>
-        </div>
-
-    </div>
-</section>
-<section class="about" id="about">
-    <div class="section-title">
-        <h2>About Alborz Solar Energy</h2>
-    </div>
-
-    <div class="about-content">
-    <p>
-        Alborz Solar Energy is a renewable energy company specializing
-        in photovoltaic (PV) solar systems and technical energy solutions
-        for residential, commercial and industrial applications.
-    </p>
-
-    <p style="margin-top: 20px;">
-        We provide professional solar energy services from project
-        planning and system design to installation and technical support.
-        Our mission is to help customers improve energy efficiency,
-        reduce energy costs and move toward a cleaner and more
-        sustainable future.
-    </p>
-
-    <p style="margin-top: 20px;">
-        With a strong focus on quality, reliability and professional
-        technical service, we aim to deliver practical renewable energy
-        solutions tailored to each project's needs.
-    </p>
-</div>
-</section>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Alborz Solar Energy | Renewable Energy Solutions</title>
-
-<style>
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
-    color: #222;
-    background: #f7f9fb;
-}
-
-header {
-    background: #102a43;
-    color: white;
-    padding: 22px 8%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin-left: 25px;
-    font-size: 15px;
-}
-
-.hero {
-    min-height: 520px;
-    padding: 100px 8%;
-    display: flex;
-    align-items: center;
-    background:
-        linear-gradient(rgba(16,42,67,.78), rgba(16,42,67,.78)),
-        url("https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1800&q=80")
-        center/cover;
-    color: white;
-}
-
-.hero-content {
-    max-width: 700px;
-}
-
-.hero h1 {
-    font-size: 52px;
-    margin-bottom: 20px;
-}
-
-.hero p {
-    font-size: 20px;
-    margin-bottom: 30px;
-}
-
-.button {
-    display: inline-block;
-    padding: 14px 28px;
-    background: #f9c74f;
-    color: #102a43;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 6px;
-}
-
-section {
-    padding: 75px 8%;
-}
-
-.section-title {
-    text-align: center;
-    margin-bottom: 45px;
-}
-
-.section-title h2 {
-    font-size: 34px;
-    color: #102a43;
-}
-
-.services {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-}
-
-.card {
-    background: white;
-    padding: 35px 25px;
-    border-radius: 10px;
-    box-shadow: 0 5px 20px rgba(0,0,0,.08);
-}
-
-.card h3 {
-    color: #102a43;
-    margin-bottom: 15px;
-}
-
-.about {
-    background: white;
-}
-
-.about-content {
-    max-width: 900px;
+.contact-wrapper {
+    max-width: 750px;
     margin: auto;
     text-align: center;
 }
 
-.contact {
-    background: #102a43;
-    color: white;
-    text-align: center;
+.contact h2 {
+    font-size: 38px;
+    margin-bottom: 15px;
 }
 
-.contact h2 {
-    font-size: 35px;
-    margin-bottom: 20px;
+.contact-intro {
+    color: #dce6ef;
+    margin-bottom: 35px;
 }
+
+.contact-form {
+    text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+
+    width: 100%;
+
+    padding: 15px;
+
+    margin-bottom: 15px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 15px;
+
+    outline: none;
+}
+
+.contact-form textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.contact-form button {
+    border: none;
+    cursor: pointer;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
 
 footer {
     background: #071c2e;
-    color: white;
+    color: #cbd5e1;
     text-align: center;
-    padding: 25px;
-    font-size: 14px;
+    padding: 30px 15px;
 }
 
-@media(max-width: 800px) {
+.footer-company {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.footer-email {
+    color: #f9c74f;
+    margin-bottom: 10px;
+}
+
+.copyright {
+    font-size: 13px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width: 900px) {
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .services-grid,
+    .project-grid,
+    .why-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 44px;
+    }
+
+}
+
+@media(max-width: 650px) {
+
     header {
+        position: relative;
+    }
+
+    .header-inner {
         flex-direction: column;
         gap: 15px;
+        text-align: center;
     }
 
     nav a {
-        margin: 0 8px;
+        margin: 0 7px;
+        font-size: 13px;
+    }
+
+    .company-name {
+        font-size: 20px;
+    }
+
+    .hero {
+        min-height: 600px;
+        padding: 80px 0;
     }
 
     .hero h1 {
         font-size: 38px;
     }
 
-    .services {
-        grid-template-columns: 1fr;
+    .hero p {
+        font-size: 17px;
     }
+
+    .stats-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    section {
+        padding: 65px 0;
+    }
+
+    .section-heading h2 {
+        font-size: 30px;
+    }
+
 }
+
 </style>
+
 </head>
+
 
 <body>
 
-<header>
-    <div class="logo">ALBORZ SOLAR ENERGY</div>
 
-   <nav>
-    <a href="#home">Home</a>
-    <a href="#services">Services</a>
-    <a href="#projects">Projects</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-</nav>
+<!-- HEADER -->
+
+<header>
+
+    <div class="header-inner">
+
+        <div class="logo-area">
+
+            <div class="company-name">
+                PAK ENERGY GOSTAR ALBORZ
+            </div>
+
+            <div class="company-subtitle">
+                SOLAR & RENEWABLE ENERGY
+            </div>
+
+        </div>
+
+
+        <nav>
+
+            <a href="#home">Home</a>
+
+            <a href="#services">Services</a>
+
+            <a href="#projects">Projects</a>
+
+            <a href="#about">About</a>
+
+            <a href="#contact">Contact</a>
+
+        </nav>
+
+    </div>
+
 </header>
 
+
+
+<!-- HERO -->
+
 <section class="hero" id="home">
-    <div class="hero-content">
-        <h1>Powering a Cleaner Future</h1>
 
-        <p>
-            Professional solar energy and renewable energy solutions
-            for residential, commercial and industrial projects.
-        </p>
+    <div class="container">
 
-        <a href="#contact" class="button">Request a Quote</a>
+        <div class="hero-content">
+
+            <div class="hero-label">
+                Renewable Energy Solutions
+            </div>
+
+            <h1>
+                Powering a <span>Cleaner</span> Future
+            </h1>
+
+            <p>
+                Pak Energy Gostar Alborz provides professional
+                photovoltaic solar systems, electrical services
+                and renewable energy solutions for residential,
+                commercial and industrial applications.
+            </p>
+
+
+            <div class="hero-buttons">
+
+                <a href="#contact" class="btn btn-primary">
+                    Request a Quote
+                </a>
+
+                <a href="#services" class="btn btn-outline">
+                    Explore Services
+                </a>
+
+            </div>
+
+        </div>
+
     </div>
+
 </section>
+
+
+
+<!-- STATS -->
+
+<div class="stats">
+
+    <div class="container">
+
+        <div class="stats-grid">
+
+            <div class="stat">
+                <h3>PV</h3>
+                <p>Solar Systems</p>
+            </div>
+
+            <div class="stat">
+                <h3>24/7</h3>
+                <p>Technical Focus</p>
+            </div>
+
+            <div class="stat">
+                <h3>3+</h3>
+                <p>Core Services</p>
+            </div>
+
+            <div class="stat">
+                <h3>100%</h3>
+                <p>Commitment to Quality</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- SERVICES -->
 
 <section id="services">
-    <div class="section-title">
-        <h2>Our Services</h2>
-        <p>Reliable renewable energy solutions from planning to installation.</p>
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <h2>Our Services</h2>
+
+            <p>
+                Practical and reliable energy solutions designed
+                around the needs of every project.
+            </p>
+
+        </div>
+
+
+        <div class="services-grid">
+
+
+            <div class="service-card">
+
+                <div class="icon">☀️</div>
+
+                <h3>
+                    Solar Panel Installation
+                </h3>
+
+                <p>
+                    Professional photovoltaic system installation
+                    for homes, villas, apartments and commercial
+                    properties.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="icon">⚡</div>
+
+                <h3>
+                    Electrical Services
+                </h3>
+
+                <p>
+                    Electrical installation, maintenance and
+                    technical services for residential and
+                    commercial applications.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="icon">🔋</div>
+
+                <h3>
+                    Renewable Energy Solutions
+                </h3>
+
+                <p>
+                    Solar energy planning and renewable energy
+                    solutions focused on efficiency, reliability
+                    and long-term energy savings.
+                </p>
+
+            </div>
+
+
+        </div>
+
     </div>
 
-    <div class="services">
-
-        <div class="card">
-            <h3>☀️ Solar Panel Installation</h3>
-            <p>
-                Professional photovoltaic system installation
-                for homes, villas, apartments and small commercial projects.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>⚡ Electrical Services</h3>
-            <p>
-                Electrical installation, maintenance and technical
-                services for residential and commercial projects.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>🔋 Renewable Energy Solutions</h3>
-            <p>
-                Solar energy planning and renewable energy solutions
-                designed to improve energy efficiency and reduce costs.
-            </p>
-        </div>
-
-    </div>
 </section>
-<section id="projects">
-    <div class="section-title">
-        <h2>Our Projects</h2>
-        <p>Professional solar energy solutions for a wide range of applications.</p>
+
+
+
+<!-- PROJECTS -->
+
+<section class="projects" id="projects">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <h2>Our Projects</h2>
+
+            <p>
+                Solar energy solutions for residential,
+                commercial and larger renewable energy applications.
+            </p>
+
+        </div>
+
+
+        <div class="project-grid">
+
+
+            <div class="project-card">
+
+                <h3>
+                    Residential Solar Systems
+                </h3>
+
+                <p>
+                    PV solutions for homes, villas and apartments.
+                </p>
+
+            </div>
+
+
+            <div class="project-card">
+
+                <h3>
+                    Commercial Solar Projects
+                </h3>
+
+                <p>
+                    Energy solutions for offices, businesses
+                    and commercial properties.
+                </p>
+
+            </div>
+
+
+            <div class="project-card">
+
+                <h3>
+                    Solar Power Plant Solutions
+                </h3>
+
+                <p>
+                    Technical planning and photovoltaic solutions
+                    for larger renewable energy projects.
+                </p>
+
+            </div>
+
+
+        </div>
+
     </div>
 
-    <div class="services">
-
-        <div class="card">
-            <h3>☀️ Residential Solar Systems</h3>
-            <p>
-                Solar photovoltaic systems designed for homes, villas
-                and apartments to improve energy efficiency and reduce
-                electricity costs.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>🏢 Commercial Solar Projects</h3>
-            <p>
-                Reliable solar energy solutions for offices, businesses
-                and commercial properties with a focus on performance
-                and long-term energy savings.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>⚡ Solar Power Plant Solutions</h3>
-            <p>
-                Technical planning and solar power solutions for larger
-                renewable energy projects and photovoltaic installations.
-            </p>
-        </div>
-
-    </div>
 </section>
+
+
+
+<!-- WHY US -->
+
+<section class="why-us">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <h2>Why Choose Us</h2>
+
+            <p>
+                Our approach is based on technical quality,
+                reliability and practical renewable energy solutions.
+            </p>
+
+        </div>
+
+
+        <div class="why-grid">
+
+
+            <div class="why-card">
+
+                <div class="icon">🛠️</div>
+
+                <h3>
+                    Technical Expertise
+                </h3>
+
+                <p>
+                    Professional technical approach to solar
+                    photovoltaic and electrical projects.
+                </p>
+
+            </div>
+
+
+            <div class="why-card">
+
+                <div class="icon">🎯</div>
+
+                <h3>
+                    Project Focused
+                </h3>
+
+                <p>
+                    Solutions designed around the specific
+                    requirements of each project.
+                </p>
+
+            </div>
+
+
+            <div class="why-card">
+
+                <div class="icon">🌱</div>
+
+                <h3>
+                    Sustainable Future
+                </h3>
+
+                <p>
+                    Helping customers move toward cleaner,
+                    more efficient and sustainable energy.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ABOUT -->
+
 <section class="about" id="about">
-    <div class="section-title">
-        <h2>About Alborz Solar Energy</h2>
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <h2>About Pak Energy Gostar Alborz</h2>
+
+        </div>
+
+
+        <div class="about-content">
+
+            <p>
+                Pak Energy Gostar Alborz is a renewable energy
+                company specializing in photovoltaic (PV) solar
+                systems and technical energy solutions for
+                residential, commercial and industrial applications.
+            </p>
+
+            <p>
+                We provide professional solar energy services
+                from project planning and system design to
+                installation and technical support.
+            </p>
+
+            <p>
+                Our mission is to help customers improve energy
+                efficiency, reduce energy costs and move toward
+                a cleaner and more sustainable future.
+            </p>
+
+        </div>
+
     </div>
 
-    <div class="about-content">
-    <p>
-        Alborz Solar Energy is a renewable energy company specializing
-        in photovoltaic (PV) solar systems and technical energy solutions
-        for residential, commercial and industrial applications.
-    </p>
-
-    <p style="margin-top: 20px;">
-        We provide professional solar energy services from project
-        planning and system design to installation and technical support.
-        Our mission is to help customers improve energy efficiency,
-        reduce energy costs and move toward a cleaner and more
-        sustainable future.
-    </p>
-
-    <p style="margin-top: 20px;">
-        With a strong focus on quality, reliability and professional
-        technical service, we aim to deliver practical renewable energy
-        solutions tailored to each project's needs.
-    </p>
-</div>
 </section>
+
+
+
+<!-- CONTACT -->
 
 <section class="contact" id="contact">
-    <h2>Let's Build a Solar Future</h2>
 
-    <p>
-        Looking for a solar energy solution?
-        Contact us to discuss your project.
-    </p>
+    <div class="container">
 
-    <br>
+        <div class="contact-wrapper">
 
-    <a href="mailto:pakenergygostaralborz@gmail.com" class="button">
-        Contact Us
-    </a>
+            <h2>
+                Let's Build a Solar Future
+            </h2>
+
+            <p class="contact-intro">
+                Tell us about your solar energy project
+                and our team will get back to you.
+            </p>
+
+
+            <form
+                class="contact-form"
+                action="https://formspree.io/f/mkjnjejz"
+                method="POST"
+            >
+
+                <input
+                    type="text"
+                    name="name"
+                    placeholder="Your Name"
+                    required
+                >
+
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="Your Email"
+                    required
+                >
+
+                <input
+                    type="tel"
+                    name="phone"
+                    placeholder="Your Phone Number"
+                >
+
+                <textarea
+                    name="message"
+                    placeholder="Tell us about your project..."
+                    required
+                ></textarea>
+
+                <button
+                    type="submit"
+                    class="btn btn-primary"
+                >
+                    Send Message
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
 </section>
 
+
+
+<!-- FOOTER -->
+
 <footer>
-    © 2026 Alborz Solar Energy. All Rights Reserved.
+
+    <div class="footer-company">
+        PAK ENERGY GOSTAR ALBORZ
+    </div>
+
+    <div class="footer-email">
+        pakenergygostaralborz@gmail.com
+    </div>
+
+    <div class="copyright">
+        © 2026 Pak Energy Gostar Alborz. All Rights Reserved.
+    </div>
+
 </footer>
 
+
 </body>
+
 </html>
