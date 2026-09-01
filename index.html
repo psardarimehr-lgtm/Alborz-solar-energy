@@ -283,6 +283,291 @@ footer {
 </div>
 </section>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alborz Solar Energy | Renewable Energy Solutions</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #222;
+    background: #f7f9fb;
+}
+
+header {
+    background: #102a43;
+    color: white;
+    padding: 22px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 15px;
+}
+
+.hero {
+    min-height: 520px;
+    padding: 100px 8%;
+    display: flex;
+    align-items: center;
+    background:
+        linear-gradient(rgba(16,42,67,.78), rgba(16,42,67,.78)),
+        url("https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1800&q=80")
+        center/cover;
+    color: white;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.button {
+    display: inline-block;
+    padding: 14px 28px;
+    background: #f9c74f;
+    color: #102a43;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+section {
+    padding: 75px 8%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-title h2 {
+    font-size: 34px;
+    color: #102a43;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    padding: 35px 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.08);
+}
+
+.card h3 {
+    color: #102a43;
+    margin-bottom: 15px;
+}
+
+.about {
+    background: white;
+}
+
+.about-content {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+.contact {
+    background: #102a43;
+    color: white;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+footer {
+    background: #071c2e;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    font-size: 14px;
+}
+
+@media(max-width: 800px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0 8px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .services {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">ALBORZ SOLAR ENERGY</div>
+
+   <nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#projects">Projects</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <h1>Powering a Cleaner Future</h1>
+
+        <p>
+            Professional solar energy and renewable energy solutions
+            for residential, commercial and industrial projects.
+        </p>
+
+        <a href="#contact" class="button">Request a Quote</a>
+    </div>
+</section>
+
+<section id="services">
+    <div class="section-title">
+        <h2>Our Services</h2>
+        <p>Reliable renewable energy solutions from planning to installation.</p>
+    </div>
+
+    <div class="services">
+
+        <div class="card">
+            <h3>☀️ Solar Panel Installation</h3>
+            <p>
+                Professional photovoltaic system installation
+                for homes, villas, apartments and small commercial projects.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>⚡ Electrical Services</h3>
+            <p>
+                Electrical installation, maintenance and technical
+                services for residential and commercial projects.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🔋 Renewable Energy Solutions</h3>
+            <p>
+                Solar energy planning and renewable energy solutions
+                designed to improve energy efficiency and reduce costs.
+            </p>
+        </div>
+
+    </div>
+</section>
+<section id="projects">
+    <div class="section-title">
+        <h2>Our Projects</h2>
+        <p>Professional solar energy solutions for a wide range of applications.</p>
+    </div>
+
+    <div class="services">
+
+        <div class="card">
+            <h3>☀️ Residential Solar Systems</h3>
+            <p>
+                Solar photovoltaic systems designed for homes, villas
+                and apartments to improve energy efficiency and reduce
+                electricity costs.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🏢 Commercial Solar Projects</h3>
+            <p>
+                Reliable solar energy solutions for offices, businesses
+                and commercial properties with a focus on performance
+                and long-term energy savings.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>⚡ Solar Power Plant Solutions</h3>
+            <p>
+                Technical planning and solar power solutions for larger
+                renewable energy projects and photovoltaic installations.
+            </p>
+        </div>
+
+    </div>
+</section>
+<section class="about" id="about">
+    <div class="section-title">
+        <h2>About Alborz Solar Energy</h2>
+    </div>
+
+    <div class="about-content">
+    <p>
+        Alborz Solar Energy is a renewable energy company specializing
+        in photovoltaic (PV) solar systems and technical energy solutions
+        for residential, commercial and industrial applications.
+    </p>
+
+    <p style="margin-top: 20px;">
+        We provide professional solar energy services from project
+        planning and system design to installation and technical support.
+        Our mission is to help customers improve energy efficiency,
+        reduce energy costs and move toward a cleaner and more
+        sustainable future.
+    </p>
+
+    <p style="margin-top: 20px;">
+        With a strong focus on quality, reliability and professional
+        technical service, we aim to deliver practical renewable energy
+        solutions tailored to each project's needs.
+    </p>
+</div>
+</section>
+
 <section class="contact" id="contact">
     <h2>Let's Build a Solar Future</h2>
 
@@ -297,6 +582,13 @@ footer {
         Contact Us
     </a>
 </section>
+
+<footer>
+    © 2026 Alborz Solar Energy. All Rights Reserved.
+</footer>
+
+</body>
+</html>
 
 <footer>
     © 2026 Alborz Solar Energy. All Rights Reserved.
